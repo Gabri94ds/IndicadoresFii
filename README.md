@@ -3,3 +3,7 @@
 
 ## Introdução
 Os fundos imobiliários, conhecidos com FIIs, são produtos do mercado financeiro que ganharam e vem ganhado bastante relevância. São fundos de investimento que investem no mercado imobiliário, em diversos setores, e negociam cotas na bolsa de valores brasileira. Cada cota representa uma porcentagem do fundo que dá direito ao comprador receber rendimentos das receitas que o fundo adquire com os ativos imobiliários adquiridos.
+
+## Objetivo
+
+O objetivo deste repositório é alocar um projeto de análise de fundos imobiliários através de alguns indicadores afim de analisar quais os melhores fundos para se investir. Não há uma pretensão de recomendação de compra e venda e sim uma análise quantitativa  através dos dados para analisar e comparar quais fundos estão perfomando melhor.

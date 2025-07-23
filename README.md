@@ -15,3 +15,5 @@ Os dados vem dos dados abertos disponibilizados pela CVM, órgão que regulament
 ## Armazenamento
 
 Os dados são baixados em formato CSV e são armazenados dentro de um banco de dados em PostgreSQL. Os dados são inseridos no banco via script feito em Python.
+
+<img width="1862" height="916" alt="drawSQL-image-export-2025-07-23" src="https://github.com/user-attachments/assets/fa347aca-ccce-4a95-9389-e96a235385cd" />

@@ -7,3 +7,11 @@ Os fundos imobiliários, conhecidos com FIIs, são produtos do mercado financeir
 ## Objetivo
 
 O objetivo deste repositório é alocar um projeto de análise de fundos imobiliários através de alguns indicadores afim de analisar quais os melhores fundos para se investir. Não há uma pretensão de recomendação de compra e venda e sim uma análise quantitativa  através dos dados para analisar e comparar quais fundos estão perfomando melhor.
+
+## De onde vem os dados?
+
+Os dados vem dos dados abertos disponibilizados pela CVM, órgão que regulamenta o mercado acionário brasileiro, e mensalmente o órgão disponibiliza dados de todos os fundos de investimento como número de cotas, ativo, passivo, patrimônio líquido...
+
+## Armazenamento
+
+Os dados são baixados em formato CSV e são armazenados dentro de um banco de dados em PostgreSQL. Os dados são inseridos no banco via script feito em Python.

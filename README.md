@@ -6,7 +6,7 @@ Os fundos imobiliários, conhecidos com FIIs, são produtos do mercado financeir
 
 ## Objetivo
 
-O objetivo deste repositório é alocar um projeto de análise de fundos imobiliários através de alguns indicadores afim de analisar quais os melhores fundos para se investir. Não há uma pretensão de recomendação de compra e venda e sim uma análise quantitativa  através dos dados para analisar e comparar quais fundos estão perfomando melhor.
+O objetivo deste repositório é alocar um projeto de análise de fundos imobiliários através de alguns indicadores afim de analisar quais os melhores fundos para se investir. Não há uma pretensão de recomendação de compra e venda e sim uma análise quantitativa através dos dados para analisar e comparar quais fundos estão perfomando melhor.
 
 ## De onde vem os dados?
 
@@ -27,3 +27,9 @@ O banco de dados até o momento foi estruturado com 04 tabelas.
   Abaixo, uma imagem de como ficou os relacionamentos entre as tabelas. A coluna Chave presente nas tabelas Preco e fundocomplemento são colunas criadas após a inserção dos dados e são as concatenações das colunas datareferencia com ticket. Na coluna fundocomplemento não há a informação de ticket e, portanto, a informação veio via JOIN da tabela FundoNome pela coluna CNPJ.
 
 <img width="1862" height="916" alt="drawSQL-image-export-2025-07-23" src="https://github.com/user-attachments/assets/fa347aca-ccce-4a95-9389-e96a235385cd" />
+
+## DataViz
+
+## Indicadores
+
+## 

@@ -30,6 +30,10 @@ O banco de dados até o momento foi estruturado com 04 tabelas.
 
 ## DataViz
 
+Como forma de visualizar os indicadores e realizar comparações escolhi a ferramenta Power BI como DataViz e monitorar os indicadores. Através da conexão com o PostgreSQL, os dados são direcionados ao PBI e por lá faço o tratamento para a visualização.
+
 ## Indicadores
 
-## 
+1. P/VP
+   Este indicador demostra a relação entre o preço real do fundo imobiliário na bolsa de valores e o preço patrimonial do fundo. O preço pratimonial é calculado pela divisão do valor do patrimônio liquído pelo total de cotas do fundo, assim chegamos ao preço patrimonial para cada cota. Após isso, realizamos a segunda divisão que é o preço negociado pelo preço patrimonial. Valores abaixo de 1,0 indicam que o fundo está sendo negociado abaixo do que vale em patrimônio, ou seja, está subvalorizado. Valores acima de 1,0 indicam que o fundo está sendo supervalorizado do que realmente vale patrimonialmente.
+   O indicador P/VP é importante para termos uma dimensão de como o mercado está precificando os fundos, mas como todo indicador não pode ser analisado sozinho porque é necessário entender o contexto do fundo e as últimas notícias e movimentos.

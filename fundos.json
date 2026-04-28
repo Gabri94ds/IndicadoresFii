@@ -1,0 +1,22 @@
+{
+    "Logística": [
+        "XPLG11"
+    ],
+    "Shoppings": [
+        "XPML11",
+        "VISC11",
+        "HGBS11",
+        "HSML11"
+    ],
+    "Lajes": [
+        "HGRE11"
+    ],
+    "Papel": [
+        "RBRR11",
+        "KNCR11"
+    ],
+    "Híbrido": [
+        "TRBL11",
+        "TRXF11"
+    ]
+}

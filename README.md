@@ -10,11 +10,13 @@ O objetivo deste repositório é alocar um projeto de análise de fundos imobili
 
 ## De onde vem os dados?
 
-Os dados são disponibilizados, de forma aberta, pela CVM, órgão que regulamenta o mercado acionário brasileiro, e mensalmente este órgão disponibiliza os dados de todos os fundos de investimento, por exemplo, número de cotas, ativo, passivo, patrimônio líquido...
+Os dados relacionados a valores de ativos, passivos e patrimônio líquido dos fundos imobiliários tem origem no site da CVM que disponibiliza gratuitamente o download desses dados. A base dos preços vem da coleta usando a biblioteca finbr criada por Renan Moretto e os dados de dividendos são vem da biblioteca Yahoo Finance.
+
+biblioteca finbr: https://github.com/renanmoretto/finbr
 
 ## Armazenamento
 
-O armazenamento é em formato CSV e armazenados dentro de um banco de dados em PostgreSQL.
+O armazenamento é feito em um banco de dados no Supabase
 
 ## Construção do banco de dados
 
@@ -23,8 +25,6 @@ O banco de dados até o momento foi estruturado com 04 tabelas.
   2. Tabela fundonome com três colunas: cnpj, ticket e segmento. Armazena dados dos fundos como CNPJ, ticket de negociação na bolsa de valores e o segmento que o fundo atua no mercado imobiliário
   3. Tabela Preco com cinco colunas: Id, datareferencia, preco, ticket e dividendo. A tabela tem dados extraídos no Python usando a  biblioteca yfinance no qual os dados extraídos são: ...
   4. Tabela fundocomplemento com sete colunas: cnpj, datareferencia, numero_cotistas, valor_ativo, patrimonio_liquido, cotas_emitidas e valor_passico. É a principal tabela porque armazena os dados oriundos da CVM.
-
-ESCREVER ALGO SOBRE A MODELAGEM MER
 
 <img width="1280" height="779" alt="Diagrama em branco" src="https://github.com/user-attachments/assets/5ebccc05-b114-4c20-87fb-dd626002c069" />
 

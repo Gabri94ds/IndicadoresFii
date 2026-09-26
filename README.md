@@ -19,10 +19,10 @@ O armazenamento é em formato CSV e armazenados dentro de um banco de dados em P
 ## Construção do banco de dados
 
 O banco de dados até o momento foi estruturado com 04 tabelas.
-  1. Tabela Periodo com uma coluna, datareferencia, com dados de janeiro de 2023 até maio de 2025 agrupados mensalmente no formato 01/mm/yyyy
-  2. Tabela FundoNome armazena dados dos fundos como CNPJ, ticket de negociação na bolsa de valores e segmento que o fundo atua no mercado imobiliário
-  3. Tabela Preco é uma tabela com dados extraídos no Python na biblioteca yfinance no qual extraí dados de preço de fechamento dos fundos no período de janeiro de 2023 até maio de 2025 agrupados mensalmente também no formato 01/mm/yyyy.
-  4. Tabela fundocomplemento é a principal tabela, pois armazena os dados vindo da CVM. Somente alguns dados foram selecionados para compor esta tabela sob a periodicidade de janeiro de 2023 até maio de 2025 também sob o formato 01/mm/yyyy.
+  1. Tabela Periodo com três colunas: datareferencia, ano e mes. Os dados são de janeiro de 2023 até dezembro de 2025 agrupados mensalmente.
+  2. Tabela fundonome com três colunas: cnpj, ticket e segmento. Armazena dados dos fundos como CNPJ, ticket de negociação na bolsa de valores e o segmento que o fundo atua no mercado imobiliário
+  3. Tabela Preco com cinco colunas: Id, datareferencia, preco, ticket e dividendo. A tabela tem dados extraídos no Python usando a  biblioteca yfinance no qual os dados extraídos são: ...
+  4. Tabela fundocomplemento com sete colunas: cnpj, datareferencia, numero_cotistas, valor_ativo, patrimonio_liquido, cotas_emitidas e valor_passico. É a principal tabela porque armazena os dados oriundos da CVM.
 
   Abaixo, uma imagem de como ficou os relacionamentos entre as tabelas. A coluna Chave presente nas tabelas Preco e fundocomplemento são colunas criadas após a inserção dos dados e são as concatenações das colunas datareferencia com ticket. Na coluna fundocomplemento não há a informação de ticket e, portanto, a informação veio via JOIN da tabela FundoNome pela coluna CNPJ.
 

@@ -26,6 +26,8 @@ O banco de dados até o momento foi estruturado com 04 tabelas.
 
   Abaixo, uma imagem de como ficou os relacionamentos entre as tabelas. A coluna Chave presente nas tabelas Preco e fundocomplemento são colunas criadas após a inserção dos dados e são as concatenações das colunas datareferencia com ticket. Na coluna fundocomplemento não há a informação de ticket e, portanto, a informação veio via JOIN da tabela FundoNome pela coluna CNPJ.
 
+<img width="1280" height="779" alt="Diagrama em branco" src="https://github.com/user-attachments/assets/5ebccc05-b114-4c20-87fb-dd626002c069" />
+
 
 ## DataViz
 

@@ -26,7 +26,6 @@ O banco de dados até o momento foi estruturado com 04 tabelas.
 
   Abaixo, uma imagem de como ficou os relacionamentos entre as tabelas. A coluna Chave presente nas tabelas Preco e fundocomplemento são colunas criadas após a inserção dos dados e são as concatenações das colunas datareferencia com ticket. Na coluna fundocomplemento não há a informação de ticket e, portanto, a informação veio via JOIN da tabela FundoNome pela coluna CNPJ.
 
-<img width="1862" height="916" alt="drawSQL-image-export-2025-07-23" src="https://github.com/user-attachments/assets/fa347aca-ccce-4a95-9389-e96a235385cd" />
 
 ## DataViz
 
@@ -41,5 +40,3 @@ Como forma de visualizar os indicadores e realizar comparações escolhi a ferra
 
 ## Análise P/VP x DY
 Por fim, com os dois indicadores calculados podemos traçar um gráfico de dispersão para saber como os fundos estão distribuídos. No eixo X, o indicador P/VP e no eixo Y o indicador DY. Então, um fundo que está para baixo e para a direita é o melhor cenário porque indica um P/VP abaixo de 1,0 e um DY alto
-
-<img width="754" height="327" alt="image" src="https://github.com/user-attachments/assets/a6ae491c-94ad-428f-87ed-3be61b4653cf" />
